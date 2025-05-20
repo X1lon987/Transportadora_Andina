@@ -1,0 +1,51 @@
+[
+  {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "Edificio del parque, piso 2, Ucaldas",
+    "id": "C0001",
+    "telefono": "3115551234",
+    "nombre": "Carlos Cuesta Iglesias"
+  },
+  {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "Mercaldas de la 52",
+    "id": "ZP8R8",
+    "telefono": "3115550009",
+    "nombre": "j"
+  },
+  {
+    "ciudad": "FLORENCIA CAQUETA",
+    "direccion": "barrio la isabela",
+    "id": "K5ZEA",
+    "telefono": "3115550009",
+    "nombre": "Luna Isabella Suarez"
+  },
+  {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "cll 1B #8A-81/T3",
+    "id": "CC1054",
+    "telefono": "3007177370",
+    "nombre": "Jacobo Quintero"
+  },
+  {
+    "ciudad": "BOGOTA, D.C. BOGOTA",
+    "direccion": "cll 1B #8A-81/T3",
+    "id": "CC30231",
+    "telefono": "3212154916",
+    "nombre": "Diana Jimena Ramirez "
+  },
+  {
+    "ciudad": "HOBO HUILA",
+    "direccion": "Laboratorio de física cuántica, LFCB",
+    "id": "PXS4P",
+    "telefono": "3115550001",
+    "nombre": "prueba funciono"
+  },
+  {
+    "ciudad": "ANORI ANTIOQUIA",
+    "direccion": "barrio bonito",
+    "id": "CC2422",
+    "telefono": "3233141560",
+    "nombre": "Daniel Antonio"
+  }
+]

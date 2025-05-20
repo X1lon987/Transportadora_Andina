@@ -1,0 +1,60 @@
+[
+  {
+    "contenido": "una moto miniatura BMWsr1000",
+    "tipo": "Paquete",
+    "costo": 90,
+    "peso": 0.9,
+    "nroGuia": "E179BLK3",
+    "fragil": false,
+    "remitente": {
+      "ciudad": "BOGOTA, D.C. BOGOTA",
+      "direccion": "cll 1B #8A-81/T3",
+      "id": "CC30231",
+      "telefono": "3212154916",
+      "nombre": "Diana Jimena Ramirez "
+    },
+    "valorEstimado": 50000,
+    "id": "E179BLK3",
+    "destinatario": {
+      "ciudad": "MANIZALES CALDAS",
+      "direccion": "cll 1B #8A-81/T3",
+      "id": "CC1054",
+      "telefono": "3007177370",
+      "nombre": "Jacobo Quintero"
+    },
+    "estados": [{
+      "fechayHora": "2024-12-01T11:30:59",
+      "estado": "RECIBIDO",
+      "id": "1979391767"
+    }]
+  },
+  {
+    "contenido": "mini componente",
+    "tipo": "Paquete",
+    "costo": 1200,
+    "peso": 12,
+    "nroGuia": "A88N8QTM",
+    "fragil": true,
+    "remitente": {
+      "ciudad": "ANORI ANTIOQUIA",
+      "direccion": "barrio bonito",
+      "id": "CC2422",
+      "telefono": "3233141560",
+      "nombre": "Daniel Antonio"
+    },
+    "valorEstimado": 500000,
+    "id": "A88N8QTM",
+    "destinatario": {
+      "ciudad": "BOGOTA, D.C. BOGOTA",
+      "direccion": "cll 1B #8A-81/T3",
+      "id": "CC30231",
+      "telefono": "3212154916",
+      "nombre": "Diana Jimena Ramirez "
+    },
+    "estados": [{
+      "fechayHora": "2024-12-01T22:39:17",
+      "estado": "RECIBIDO",
+      "id": "1932259822"
+    }]
+  }
+]

@@ -1,0 +1,49 @@
+<form id="form-estados" class="">
+    <fieldset>
+        <!-- IMPORTANTE: no es necesario mostrar el ID de las mercancías, por eso type="hidden"  -->
+        <!-- Aqui hay que ir jugando con el tamano de las columnas  (col-) -->
+         <header class="p-10 ms-2"><h5>Estados de Envios</h5></header>
+        
+         <div class="row mx-1 mb-3 me-3">
+            <div class="col-3">
+                <div class="form-group">
+                    <label for="disponible" class="form-label my-0">Fecha y Hora Actual</label>
+                    <input type="text" class="form-control" id="fechaHora" name="fechaHora" placeholder="Asignación automática"
+                    disabled />
+                </div>               
+            </div>
+            <div id="div-tipo-envio" class="col-3 mx-1  my-0 me-10">
+                <div class="form-group">
+                    <label for="remitente" class="form-label my-0">Tipo de Envio</label>
+                  <select class="form-select" id="tipoEnvio" name="TipoEnvio" required value !="">
+                    <option value="" selected>Seleccione un Envio</option>
+                    <option value="caja">Caja</option>
+                    <option value="paquete">Paquete</option>
+                    <option value="sobre">Sobre</option>
+                    <option value="bulto">Bulto</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="col-3 mx-1 my-0 mb-2 " >
+                <div id="div-id" class="form-group ">
+                    <label for="numGuia" class="form-label my-0">Numero Guia</label> 
+                    <input id="numGuia" class="form-control me-2" type="search" placeholder="Ingrese Numero Guia" aria-label="Search" minlength="8" maxlength="8" required>
+                </div> 
+            </div>
+            <div class="col-2 mt-4">
+                <button id="buscar" class="btn btn-outline-primary " type="submit">Buscar Estados</button>
+            </div>  
+                                       
+                              
+                      
+        </div>
+    </fieldset>
+</form>
+<div id="div-info" class="p-4 bg-secondary mx-3 rounded" style="display:none;">
+    
+        
+
+</div>
+
+

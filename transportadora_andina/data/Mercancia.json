@@ -1,0 +1,65 @@
+[
+  {
+    "contenido": "Arepa en bultos de 30 kilos",
+    "costo": 235200,
+    "volumen": 5.88,
+    "alto": 2,
+    "bodega": "villamaria parque villaDiana",
+    "calcularDias": 8,
+    "cliente": {
+      "ciudad": "MANIZALES CALDAS",
+      "direccion": "Edificio del parque, piso 2, Ucaldas",
+      "id": "C0001",
+      "telefono": "3115551234",
+      "nombre": "Carlos Cuesta Iglesias"
+    },
+    "ciudad": "MANIZALES CALDAS",
+    "ancho": 2.1,
+    "fechaSalida": "2024-11-12T16:00",
+    "fechaEntrada": "2024-11-04T14:35",
+    "largo": 1.4,
+    "id": "H1NEAC3A"
+  },
+  {
+    "contenido": "ropa, mucha ropa",
+    "costo": 5000,
+    "volumen": 1,
+    "alto": 1,
+    "bodega": "galeria centro, comercio 3",
+    "calcularDias": 1,
+    "cliente": {
+      "ciudad": "FLORENCIA CAQUETA",
+      "direccion": "barrio la isabela",
+      "id": "K5ZEA",
+      "telefono": "3115550009",
+      "nombre": "Luna Isabella Suarez"
+    },
+    "ciudad": "FLORENCIA CAQUETA",
+    "ancho": 1,
+    "fechaSalida": "2024-11-19T12:02",
+    "fechaEntrada": "2024-11-19T11:02",
+    "largo": 1,
+    "id": "F8DVMJ6U"
+  },
+  {
+    "contenido": "25 kilos de maquillaje beuaty",
+    "costo": 224000,
+    "volumen": 5.6,
+    "alto": 2,
+    "bodega": "villamaria parque villaDiana",
+    "calcularDias": 8,
+    "cliente": {
+      "ciudad": "HOBO HUILA",
+      "direccion": "Laboratorio de física cuántica, LFCB",
+      "id": "PXS4P",
+      "telefono": "3115550001",
+      "nombre": "prueba funciono"
+    },
+    "ciudad": "HOBO HUILA",
+    "ancho": 2,
+    "fechaSalida": "2024-11-12T16:00",
+    "fechaEntrada": "2024-11-04T14:35",
+    "largo": 1.4,
+    "id": "WAFJANXG"
+  }
+]

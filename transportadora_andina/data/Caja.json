@@ -1,0 +1,40 @@
+[{
+  "contenido": "un proyecto 10 de 10",
+  "tipo": "Caja",
+  "costo": 48050,
+  "volumen": 48,
+  "nroGuia": "Z5AN4IC8",
+  "peso": 0.1,
+  "remitente": {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "cll 1B #8A-81/T3",
+    "id": "CC1054",
+    "telefono": "3007177370",
+    "nombre": "Jacobo Quintero"
+  },
+  "valorEstimado": 0.1,
+  "alto": 12,
+  "destinatario": {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "Edificio del parque, piso 2, Ucaldas",
+    "id": "C0001",
+    "telefono": "3115551234",
+    "nombre": "Carlos Cuesta Iglesias"
+  },
+  "estados": [
+    {
+      "fechayHora": "2024-10-09T11:29:33",
+      "estado": "RECIBIDO",
+      "id": "335290598"
+    },
+    {
+      "fechayHora": "2024-10-09T11:29:33",
+      "estado": "EN_PREPARACION",
+      "id": "1617686645"
+    }
+  ],
+  "ancho": 2,
+  "fragil": false,
+  "largo": 2,
+  "id": "Z5AN4IC8"
+}]

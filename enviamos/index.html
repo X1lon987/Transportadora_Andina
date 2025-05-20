@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enviamos</title>
+  <link rel="stylesheet" href="./resources/css/styles.css" />
+  <script defer type="module" src="./resources/js/index.mjs"></script>
+</head>
+
+<body class="d-flex flex-column h-100 bodyHome">
+  <header>
+    <!-- 
+        el <nav> de aquí correspone a su tema preferido (https://bootswatch.com/). Realice las adataciones necesarias,
+        una de ellas, para el nav: id="main-menu"
+      -->
+    <nav id="main-menu" class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid" bis_skin_checked="1">
+        <a id="app-logo" class="navbar" href="">
+          <img src="./resources/assets/images/courier.png" alt="logo" width=" 50px">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+          aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor02" bis_skin_checked="1">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Inicio
+                <!-- <span class="visually-hidden">(current)</span> -->
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Clientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mercancías</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Envios</a>
+              <div class="dropdown-menu" bis_skin_checked="1">
+                <a class="dropdown-item" href="#">Cajas</a>
+                <a class="dropdown-item" href="#">Paquetes</a>
+                <a class="dropdown-item" href="#">Sobres</a>
+                <a class="dropdown-item" href="#">Bultos</a>
+                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                <a class="dropdown-item" href="#">Consultas envios</a></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estados</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Opcion 6</a>
+              <div class="dropdown-menu" bis_skin_checked="1">
+                <a class="dropdown-item" href="#">...</a>
+                <a class="dropdown-item" href="#">Aun nada</a>
+                <a class="dropdown-item" href="#">No</a>
+                <div class="dropdown-divider" bis_skin_checked="1"></div>
+                <a class="dropdown-item" href="#">Pronto?</a></a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Acerca de...</a>
+            </li>
+          </ul>
+          <li class="nav-item dropdown">
+              <div class="btn-group dropstart">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Usuarios
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sustentar1</a></li>
+                  <li><a class="dropdown-item" href="#">Sustentar2</a></li>
+                  <li><a class="dropdown-item" href="#">Sustentar3</a></li>
+                  <div class="dropdown-divider" bis_skin_checked="1"></div>
+                <a class="dropdown-item" href="#">No quiero sustentar</a></a>
+                </ul>
+              </div>
+          </li>        
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main role="main" class="flex-shrink-0 pt-1"></main>
+
+  <footer class="fixed-bottom">
+    <div class="container-fluid bg-dark">
+      <!-- reemplace el <p> siguiente por un pie de página de su agrado, respetando el tema de la página -->
+      <p class="text-secondary text-center mb-0 py-3">© 2025 Sistema de Logística</p>
+    </div>
+  </footer>
+</body>
+
+</html>

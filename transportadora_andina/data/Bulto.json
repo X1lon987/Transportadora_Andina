@@ -1,0 +1,29 @@
+[{
+  "contenido": "libros, teoria y ejercicios practicos en libros",
+  "tipo": "Bulto",
+  "costo": 12000,
+  "nroGuia": "2WZDTYQK",
+  "peso": 12,
+  "fragil": false,
+  "remitente": {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "Edificio del parque, piso 2, Ucaldas",
+    "id": "C0001",
+    "telefono": "3115551234",
+    "nombre": "Carlos Cuesta Iglesias"
+  },
+  "valorEstimado": 100000,
+  "id": "2WZDTYQK",
+  "destinatario": {
+    "ciudad": "MANIZALES CALDAS",
+    "direccion": "cll 1B #8A-81/T3",
+    "id": "CC1054",
+    "telefono": "3007177370",
+    "nombre": "Jacobo Quintero"
+  },
+  "estados": [{
+    "fechayHora": "2024-12-01T22:35:10",
+    "estado": "RECIBIDO",
+    "id": "593693176"
+  }]
+}]

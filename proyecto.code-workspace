@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "enviamos"
+		},
+		{
+			"path": "transportadora_andina"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5502,
+		"liveServer.settings.multiRootWorkspaceName": "enviamos"
+	}
+}

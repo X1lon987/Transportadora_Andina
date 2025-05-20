@@ -1,0 +1,303 @@
+// Agregue a este archivo todas y cada una de las peticiones HTTP que se requieren para pruebas
+// de lo contrario se utilizará uno por defecto con todas las peticiones de pruebas necesarias.
+// Si su archivo de pruebas no está completo, también se utilizará  el archivo por defecto.
+
+
+### Tenga en cuenta que debe asignar el puerto correcto de salida
+
+@url = http://localhost:8080
+
+### listar los estados de los envíos
+GET {{url}}/envio/estados
+
+// ---------------------- CRUD DE CLIENTES ----------------------
+
+### agregar un cliente con ID conocido
+POST {{url}}/cliente
+Content-Type: application/json; charset=utf-8
+
+{
+    "id": "C0003",
+    "nombre": "Jacobo Quintero Ramirez",
+    "direccion": "Edificio del parque, piso 5, Ucaldas",
+    "telefono": "3007177370",
+    "ciudad": "Manizales"
+}
+
+### agregar un cliente con ID desconocido
+POST {{url}}/cliente
+Content-Type: application/json; charset=utf-8
+
+{
+    "nombre": "Prueba Actualizar",
+    "direccion": "barrio la capilla",
+    "telefono": "39247523755",
+    "ciudad": "medellin"
+}
+
+### listar todos los cliente registrados
+GET {{url}}/cliente
+
+### Buscar un cliente dado su índice
+GET {{url}}/cliente/indice/1
+
+### Buscar un cliente dado su ID
+GET {{url}}/cliente/id/K5ZEA
+
+### Buscar por ID y actualizar algunos o todos los datos de un cliente
+PATCH {{url}}/cliente/PXS4P
+Content-Type: application/json; charset=utf-8
+
+{
+  "nombre": "prueba funciono",
+  "direccion": "Laboratorio de física cuántica, LFCB",
+  "telefono": "3115550001",
+  "ciudad": "Bogotá"
+}
+
+### Eliminar un cliente dado su ID
+DELETE {{url}}/cliente/C0002
+
+// ---------------------- CRUD DE MERCANCÍAS ----------------------
+
+### agregar mercancía (para mercancía, el ID se autogenera siempre)
+POST {{url}}/mercancia
+Content-Type: application/json; charset=utf-8
+
+{
+    "contenido": "25 kilos de maquillaje beuaty",
+    "ancho": 2.0,
+    "largo": 1.4,
+    "alto": 2,
+    "fechaEntrada": "2024-11-04T14:35",
+    "fechaSalida": "2024-11-12T16:00",
+    "bodega": "villamaria parque villaDiana",
+    "cliente": "PXS4P"
+}
+
+### listar todas las mercancías registradas en depósito
+GET {{url}}/mercancia
+
+### Buscar una mercancía dado su índice
+GET {{url}}/mercancia/indice/0
+
+### Buscar una mercancía dado su ID
+GET {{url}}/mercancia/id/1BHYO0F8
+
+###Buscar ciudad
+GET {{url}}/cliente/ciudad/Bogotá
+
+### Buscar por ID y actualizar algunos o todos los datos de una mercancía en depósito
+PATCH {{url}}/mercancia/ATKL0A6N
+Content-Type: application/json; charset=utf-8
+
+{
+    "contenido": "500 unidades de arándanos deshidratados x 500 gramos",
+    "ancho": 2.1,
+    "largo": 2.5,
+    "alto": 2.5,
+    "fechaEntrada": "2024-10-07T12:00",
+    "fechaSalida": "2024-10-20T12:00",
+    "bodega": "Zona industrial Juanchito, Bogotá",
+    "cliente": "C0001"
+}
+
+### Eliminar una mercancía dado su ID
+DELETE {{url}}/mercancia/0A7FQ
+
+// ---------------------- CRUD DE PAQUETES ----------------------
+
+### agregar paquete (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/paquete
+Content-Type: application/json; charset=utf-8
+
+{
+    "peso": 1200,
+    "fragil": true,
+    "contenido": "Muchos computadores Mac",
+    "valorEstimado": 200000,
+    "remitente": "C0001",
+    "destinatario": "C0002",
+}
+
+### listar todos los paquetes
+GET {{url}}/paquete
+
+### Buscar un paquete dado su índice
+GET {{url}}/paquete/indice/0
+
+### Buscar un paquete dado su número de guía
+GET {{url}}/paquete/id/KK2V8
+
+### Buscar por nroGuia y actualizar algunos o todos los datos del paquete
+PATCH {{url}}/paquete/AKE5GN6Q
+Content-Type: application/json; charset=utf-8
+
+{
+  "contenido": "Componentes eléctricos",
+  "peso": 1.5,
+  "fragil": true,
+  "remitente": "C0002",
+  "destinatario": "C0001",
+  "estados": [
+    {
+      "estado": "RECIBIDO",
+      "fechaHora": "2024-10-08T19:29:44"
+    }
+  ]
+}
+
+### Eliminar un paquete dado su número de guía
+DELETE {{url}}/paquete/AKE5GN6Q
+
+// ---------------------- CRUD DE BULTOS ----------------------
+
+### agregar un bulto (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/bulto
+Content-Type: application/json; charset=utf-8
+
+{
+    "peso": 3000,
+    "fragil": false,
+    "contenido": "Panela en atados",
+    "valorEstimado": 100000,
+    "remitente": "ZP8R8",
+    "destinatario": "C0001",
+}
+
+### listar todos los paquetes
+GET {{url}}/bulto
+
+### Buscar un paquete dado su índice
+GET {{url}}/bulto/indice/0
+
+### Buscar un paquete dado su número de guía
+GET {{url}}/bulto/id/W3GG2
+
+### Buscar por nroGuia y actualizar algunos o todos los datos del paquete
+PATCH {{url}}/bulto/W3GG2
+Content-Type: application/json; charset=utf-8
+
+{
+  "contenido": "Papa R12 por 25 Kilos",
+  "peso": 3.0,
+  "fragil": false,
+  "remitente": "ZP8R8",
+  "valorEstimado": 100000,
+  "destinatario": "C0001",
+  "estados": [
+    {
+      "estado": "RECIBIDO",
+      "fechaHora": "2024-10-09T11:29:33"
+    }
+  ]
+}
+
+### Eliminar un paquete dado su número de guía
+DELETE {{url}}/bulto/AFOQJW4R
+
+// ---------------------- CRUD DE SOBRES ----------------------
+
+// se omite: peso, fragil, contenido, valor declarado ?????????????????????????
+
+### agregar un sobre (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/sobre
+Content-Type: application/json; charset=utf-8
+
+{
+    "peso": 0,
+    "fragil": false,
+    "contenido": "Documentos",
+    "valorEstimado": 20000,
+    "remitente": "ZP8R8",
+    "destinatario": "C0001",
+}
+
+### listar todos los paquetes
+GET {{url}}/sobre
+
+### Buscar un paquete dado su índice
+GET {{url}}/sobre/indice/0
+
+### Buscar un paquete dado su número de guía
+GET {{url}}/sobre/id/C6NQ0NYX
+
+### Buscar por nroGuia y actualizar algunos o todos los datos del paquete
+PATCH {{url}}/sobre/IB8KR6IL
+Content-Type: application/json; charset=utf-8
+
+{
+  "contenido": "Desconocido",
+
+}
+
+### Eliminar un paquete dado su número de guíaa
+DELETE {{url}}/sobre/AFOQJW4R
+
+// ---------------------- CRUD DE CAJAS ----------------------
+
+
+### agregar un caja (para envíos, el nroGuia y el 1er estado se generan automáticamente)
+POST {{url}}/caja
+Content-Type: application/json; charset=utf-8
+
+{
+    "peso": 3000,
+    "fragil": false,
+    "alto" : 2,
+    "ancho" : 3,
+    "largo" : 4,
+    "contenido": "Panela en atados",
+    "valorEstimado": 1000,
+    "remitente": "C0002",
+    "destinatario": "C0001",
+}
+### listar todos las cajas
+GET {{url}}/caja
+
+### Buscar una caja dado su índice
+GET {{url}}/caja/indice/0
+
+### Buscar una caja dado su número de guía
+GET {{url}}/caja/id/WHWttfggf
+
+### Buscar por nroGuia y actualizar algunos o todos los datos de la caja
+PATCH {{url}}/caja/Z5AN4IC8
+Content-Type: application/json; charset=utf-8
+
+{
+  "estados": [
+    {
+      "estado": "RECIBIDO",
+      "fechayHora": "2024-10-09T11:29:33"
+    },
+    {
+      "estado": "EN_CAMINO",
+      "fechayHora": "2024-10-09T11:29:33"
+    },
+  ]
+}
+
+### Eliminar una caja dado su número de guía
+DELETE {{url}}/caja/AFOQJW4R
+
+
+//CONTEOS-----------------------------------------------------------------------------
+
+###Conteo mercancias
+GET {{url}}/mercancia/conteo
+
+###conteo clientes
+GET {{url}}/cliente/conteo
+
+###conteo paquetes
+GET {{url}}/paquete/conteo
+
+###conteo bultos
+GET {{url}}/bulto/conteo
+
+###conteo sobres
+GET {{url}}/sobre/conteo
+
+###conteo cajas
+GET {{url}}/caja/conteo
