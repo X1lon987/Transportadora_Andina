@@ -8,3 +8,6 @@ Ejecucion del programa:
   correr el archivo "app" del Backend "./transportadora_andina/src/main/app.java"
   esperar el proceso de ejecucion y carga de la API
   abrir mediante liveServer o de manera normal el achivo index.html "./enviamos/index.html"
+
+#Extras:
+  Se agrego el archivo proyecto.workspace de visual studio code, aqui hay algunas configuraciones relacionadas al uso de liveServer y asi      tambien tener ambas carpetas relacionadas de una manera mas sencilla.
